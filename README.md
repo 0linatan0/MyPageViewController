@@ -86,7 +86,23 @@ willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewContro
 <img src= "http://7xrh2s.com1.z0.glb.clouddn.com/iospageControlview1.gif" width = 40% height=40%>
 </center>
 
-##自定义页面指示器page indicator
+可以利用UIPageControl修改page indicator，具体如下
+
+~~~
+UIPageControl *pageControl = [UIPageControl appearance];
+pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+pageControl.backgroundColor = [UIColor whiteColor];
+~~~
 
 
 ##参考资料
+[Page View Controllers](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/PageViewControllers.html#//apple_ref/doc/uid/TP40011313-CH4-SW7)
+
+[UIPageViewController](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPageViewControllerClassReferenceClassRef/#//apple_ref/doc/c_ref/UIPageViewControllerNavigationDirection)
+
+[UIPageViewController - Xcode 6.2 iOS 8.2 Tutorial](https://www.youtube.com/watch?v=8bltsDG2ENQ)
+
+[UIPageViewController in iOS](http://www.theappguruz.com/blog/uipageviewcontroller-in-ios)
+
+[UIPageViewController教程](http://www.jianshu.com/p/46c8c585d50b)
